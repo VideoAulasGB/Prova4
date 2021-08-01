@@ -35,7 +35,7 @@ html, body {
              TSC.playerConfiguration.setSidebarEnabled(false);
              TSC.playerConfiguration.setTheme(TSC.themeNames.DUSK);
              TSC.playerConfiguration.allowFastForward = true;
-             TSC.playerConfiguration.skipVideoControlsEnabled = true;
+             TSC.playerConfiguration.skipVideoControlsEnabled = false;
              TSC.playerConfiguration.skipVideoDuration = 10;
              
              TSC.playerConfiguration.setAutoPlayMedia(false);
@@ -45,6 +45,9 @@ html, body {
              TSC.playerConfiguration.setEndActionParam("true");
              TSC.playerConfiguration.setAllowRewind(-1);
              
+		
+             TSC.playerConfiguration.setDisableControls(true);
+             TSC.playerConfiguration.enableSingleClickControl = true;
 
              TSC.localizationStrings.setLanguage(TSC.languageCodes.ENGLISH);
 
